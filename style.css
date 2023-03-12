@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    background-color: rgba(224, 217, 219, 0.341);
+    font-family: 'Roboto', sans-serif;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /* background-color: rgba(137, 43, 226, 0.236); */
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.link-itens-menu{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-itens{
+    margin-left: 10px;
+    font-variant: small-caps;
+    font-size: 24px;
+    text-decoration: none;
+    
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+#air-force-1-paralax > p{
+    height: 400px;
+    font-size: 60px;
+
+    display: flex; 
+    align-items: end;
+    justify-content: center;
+    
+    
+}
+
+#air-force-1-paralax{
+    background-image: url(imgs/Air-Force-1-paralax.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: rgb(173, 171, 171);
+    text-align: center;
+    
+    font-variant: small-caps;
+    height: 800px;
+}
+
+.grade-carrossel{
+    width: 100vw;
+
+    /* background-color: rgba(165, 42, 42, 0.47); */
+
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    scroll-snap-align: x mandatory;
+    height: 400px;
+}
+
+.card-tenis{
+    flex-shrink: 0;
+
+    scroll-snap-align: start;
+
+    text-align: center;
+
+    margin-right: 50px;
+
+    margin-left: 50px;
+
+    /* background-color: rgba(37, 37, 209, 0.38); */
+
+    width: 530px;
+    height: 290px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+.card-container:hover{
+    background-color: rgba(128, 128, 128, 0.528);
+}
+
+.imagens-tenis-cards{
+    border-radius: 20px;
+    padding-right: 10px;
+}
+
+.card-tenis-texto{
+    height: 290px;
+    /* background-color: rgba(165, 42, 42, 0.357); */
+    width: 250px;
+    
+
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+}
+
+.nome-tenis{
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+.preco-tenis{
+    font-size: 20px;
+}
+
