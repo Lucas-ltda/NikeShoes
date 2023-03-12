@@ -7,26 +7,36 @@
     padding: 0;
 }
 
-
 header{
     background-color: rgba(224, 217, 219, 0.341);
     font-family: 'Roboto', sans-serif;
     height: 100px;
-    width: 100vw;
+    width: 99vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+   
     
+}
+
+#menu-container{
+    /* background-color: aqua; */
+   
+    display: flex;
+    justify-content: space-around;
 }
 
 .menu{
     display: flex;
     flex-direction: row;
     list-style: none;
-    /* background-color: rgba(137, 43, 226, 0.236); */
+    background-color: rgba(137, 11, 255, 0.754);
+    width: 90vw;
     height: 100px;
     display: flex;
     align-items: center;
+    justify-content: right;
+    display: block;
 }
 
 .link-itens-menu{
@@ -35,17 +45,14 @@ header{
 }
 
 .menu-itens{
-    margin-left: 10px;
+    margin-left: 50px;
     font-variant: small-caps;
     font-size: 24px;
     text-decoration: none;
-    
-    
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
+   
     background-color: white;
 }
 
@@ -73,18 +80,20 @@ body{
 }
 
 .grade-carrossel{
-    width: 100vw;
-
+    margin: auto;
+    width: 95vw;
+    
     /* background-color: rgba(165, 42, 42, 0.47); */
-
+    
     display: flex;
     overflow: auto;
     align-items: center;
     scroll-snap-align: x mandatory;
-    height: 400px;
+    height: 550px;
 }
 
 .card-tenis{
+    
     flex-shrink: 0;
 
     scroll-snap-align: start;
@@ -95,7 +104,7 @@ body{
 
     margin-left: 50px;
 
-    /* background-color: rgba(37, 37, 209, 0.38); */
+   /* background-color: rgba(37, 37, 209, 0.38);  */
 
     width: 530px;
     height: 290px;
@@ -104,11 +113,12 @@ body{
     justify-content: center;
     align-items: center;
 
-    border-radius: 10px;
+    border-radius: 40px;
 }
 
 .card-container:hover{
     background-color: rgba(128, 128, 128, 0.528);
+    border-radius: 20px;
 }
 
 .imagens-tenis-cards{
@@ -118,7 +128,7 @@ body{
 
 .card-tenis-texto{
     height: 290px;
-    /* background-color: rgba(165, 42, 42, 0.357); */
+    /* background-color: rgba(165, 42, 42, 0.357);  */
     width: 250px;
     
 
@@ -135,5 +145,79 @@ body{
 
 .preco-tenis{
     font-size: 20px;
+}  
+
+#air-jordan-1-paralax{
+    background-image: url(imgs/jorda-paralax-1.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: rgb(173, 171, 171);
+    text-align: center;
+    
+    font-variant: small-caps;
+    height: 800px;
 }
+
+#air-jordan-1-paralax > p{
+    height: 400px;
+    font-size: 60px;
+
+    display: flex; 
+    align-items: end;
+    justify-content: center;
+    
+    
+}
+
+#court-vision-paralax{
+    background-image: url(imgs/CV-paralax.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: rgb(85, 5, 5);
+    text-align: center;
+    
+    font-variant: small-caps;
+    height: 800px;
+}
+
+#court-vision-paralax > p{
+    height: 400px;
+    font-size: 60px;
+
+    display: flex; 
+    align-items: end;
+    justify-content: center;
+    
+}
+
+#Dunk-paralax{
+    background-image: url(imgs/Dunk-Paralax.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: rgb(85, 5, 5);
+    text-align: center;
+    
+    font-variant: small-caps;
+    height: 800px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(178, 178, 178, 0.706);
+    width: 10px;
+    border-radius: 50px;
+    border: 3px solid (178, 178, 178, 0.706);
+}
+
 
